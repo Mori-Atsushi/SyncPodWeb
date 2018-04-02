@@ -100,3 +100,13 @@ section.new .horizontal img {
   width: 50%;
   align-self: flex-end;
 }
+
+footer {
+  background-color: #333333;
+  text-align: center;
+}
+
+footer img {
+  margin: 40px 0;
+  width: 40%;
+}
