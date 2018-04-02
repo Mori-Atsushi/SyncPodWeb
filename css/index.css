@@ -2,12 +2,16 @@ html, body {
   margin: 0;
   padding: 0;
   font-family: "Helvetica Neue", 'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro',"メイリオ", sans-serif;
-  font-size: 16px;
+  font-size: 15px;
+  overflow-x: hidden;
+}
+
+header, section, h1, h2, p {
+  margin: 0;
+  padding: 0;
 }
 
 header, section {
-  margin: 0;
-  padding: 0;
   background: linear-gradient(#ffffff, #f3f3f3);
 }
 
@@ -15,10 +19,6 @@ header {
   height: 100vh;
   position: relative;
   overflow: hidden;
-}
-
-header h1 {
-  margin: 0;
 }
 
 header h1 img {
@@ -29,6 +29,11 @@ header h1 img {
 header .catch-phrase {
   text-align: center;
   font-size: 1.2rem;
+  padding: 15px 0;
+}
+
+header .catch-phrase p {
+  margin-bottom: 15px;
 }
 
 header .screen-shot {
@@ -49,4 +54,21 @@ header .release {
   text-align: center;
   font-size: 2rem;
   padding: 12px 0;
+}
+
+section .text {
+  margin: 20px 5% 10px;
+}
+
+section h2 {
+  font-size: 1.5rem;
+  margin: 0 0 10px 0;
+}
+
+section p {
+  line-height: 2rem;
+}
+
+section.about img {
+  width: 100%;
 }
