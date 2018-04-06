@@ -11,6 +11,10 @@ header, section, h1, h2, p {
   padding: 0;
 }
 
+img {
+  vertical-align: bottom;
+}
+
 header, section {
   background: linear-gradient(#ffffff, #f3f3f3);
 }
@@ -19,6 +23,11 @@ header {
   height: 100vh;
   position: relative;
   overflow: hidden;
+  text-align: center;
+}
+
+header .title {
+  height: 100%;
 }
 
 header h1 img {
@@ -27,7 +36,6 @@ header h1 img {
 }
 
 header .catch-phrase {
-  text-align: center;
   font-size: 1.2rem;
   padding: 15px 0;
 }
@@ -36,7 +44,7 @@ header .catch-phrase p {
   margin-bottom: 15px;
 }
 
-header .screen-shot {
+header .sp-screen-shot {
   width: 100%;
   height: 100%;
   background-image: url("../images/screen-shot.png");
@@ -45,13 +53,16 @@ header .screen-shot {
   background-repeat: no-repeat;
 }
 
+header .pc-screen-shot {
+  display: none;
+}
+
 header .release {
   position: absolute;
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.7);
   width: 100%;
   color: #ffffff;
-  text-align: center;
   font-size: 2rem;
   padding: 12px 0;
 }
@@ -84,15 +95,19 @@ section.share img {
   width: 100%;
 }
 
+section.share .img {
+  display: none;
+}
+
 section.new .horizontal {
   display: flex;
   align-items: flex-start;
   width: 100%;
+  margin-left: 5%;
 }
 
 section.new .horizontal .text {
-  width: 50%;
-  padding-left: 20px;
+  width: 45%;
   margin: 0;
 }
 
@@ -100,6 +115,11 @@ section.new .horizontal img {
   width: 50%;
   align-self: flex-end;
 }
+
+section.new .img {
+  display: none;
+}
+
 
 footer {
   background-color: #333333;
@@ -109,4 +129,225 @@ footer {
 footer img {
   margin: 40px 0;
   width: 40%;
+}
+
+@media only screen and (min-width: 480px) {
+html, body {
+  font-size: 16px;
+}
+
+header h1 img {
+  width: 70%;
+  max-width: 400px;
+  padding: 50px 15% 10px;
+}
+
+header .catch-phrase {
+  font-size: 1.5rem;
+}
+
+section .text {
+  margin: 25px 8% 15px;
+}
+
+section.new .horizontal {
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+  margin-left: 8%;
+}
+
+section.new .horizontal .text {
+  width: 42%;
+  margin: 0;
+}
+
+footer img {
+  width: 30%;
+}
+}
+
+@media only screen and (min-width: 800px) {
+html, body {
+  font-size: 18px;
+}
+
+header {
+  display: flex;
+  align-items: center;
+}
+
+header .title {
+  min-width: 500px;
+  width: 45%;
+  height: auto;
+  margin: 10px 0 30px;
+}
+
+header h1 img {
+  padding: 10px 10% 10px;
+}
+
+header .release {
+  position: relative;
+  display: inline-block;
+  width: auto;
+  font-size: 1.5rem;
+  padding: 12px 20px;
+}
+
+header .catch-phrase {
+  font-size: 1.2rem;
+  padding: 15px 0 30px;
+}
+
+header .sp-screen-shot {
+  display: none;
+}
+
+header .pc-screen-shot {
+  display: block;
+  height: 70%;
+}
+
+section.about {
+  position: relative;
+}
+
+section.about .text {
+  position: absolute;
+  width: 40%;
+  max-width: 600px;
+  top: 40px;
+  left: 55%;
+  margin: 0;
+}
+
+section.room,
+section.playlist,
+section.chat,
+section.new {
+  display: flex;
+  align-items: top;
+  max-width: 100%;
+  justify-content: center;
+}
+
+section.room .text,
+section.playlist .text,
+section.chat .text {
+  width: 40%;
+  max-width: 500px;
+  margin: 120px 0 30px 8%;
+}
+
+section.room .img,
+section.playlist .img,
+section.chat .img {
+  margin: 30px 0 10px;
+  max-width: 600px;
+  flex: 1;
+  display: block;
+}
+
+section.playlist {
+  flex-direction: row-reverse;
+}
+
+section.playlist .text {
+  margin: 120px 8% 30px 0;
+}
+
+section.share .text {
+  margin: 60px 20% 30px;
+}
+
+section.share img {
+  width: 80%;
+  margin: 0 10%;
+}
+
+section.new .pc-text {
+  width: 50%;
+  max-width: 500px;
+  margin: 120px 0 30px 8%;
+}
+
+section.new .text {
+  margin: 0;
+}
+
+section.new .horizontal {
+  margin: 0;
+}
+
+section.new .horizontal .text {
+  width: 100%;
+}
+
+section.new .horizontal img {
+  display: none;
+}
+
+section.new .img {
+  display: block;
+  margin-bottom: 0;
+}
+
+section.new .img img {
+  flex: 1;
+  max-width: 600px;
+}
+
+footer img {
+  margin: 60px 0;
+  width: 20%;
+  max-width: 256px;
+}
+}
+
+@media only screen and (min-width: 1024px) {
+header .catch-phrase {
+  font-size: 1.5rem;
+  padding: 15px 0 30px;
+}
+
+header .release {
+  font-size: 2rem;
+  padding: 16px 30px;
+}
+
+section.about .text {
+  position: absolute;
+  top: 80px;
+  right: 4%;
+  margin: 0;
+}
+
+section.share {
+  display: flex;
+  align-items: top;
+  justify-content: center;
+}
+
+section.share .two {
+  display: none;
+}
+
+section.share .text {
+  margin: 60px 0 30px;
+  max-width: 400px;
+}
+
+section.share .img {
+  display: block;
+  flex: 1;
+  max-width: 500px;
+  margin: 30px 0;
+}
+
+section.share img {
+  width: 140%;
+  margin: 0 -20%;
+}
 }
