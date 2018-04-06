@@ -95,6 +95,10 @@ section.share img {
   width: 100%;
 }
 
+section.share .img {
+  display: none;
+}
+
 section.new .horizontal {
   display: flex;
   align-items: flex-start;
@@ -116,6 +120,7 @@ section.new .img {
   display: none;
 }
 
+
 footer {
   background-color: #333333;
   text-align: center;
@@ -133,6 +138,7 @@ html, body {
 
 header h1 img {
   width: 70%;
+  max-width: 400px;
   padding: 50px 15% 10px;
 }
 
@@ -186,16 +192,13 @@ header .release {
   position: relative;
   display: inline-block;
   width: auto;
+  font-size: 1.5rem;
+  padding: 12px 20px;
 }
 
 header .catch-phrase {
   font-size: 1.2rem;
   padding: 15px 0 30px;
-}
-
-header .release {
-  font-size: 1.5rem;
-  padding: 12px 20px;
 }
 
 header .sp-screen-shot {
@@ -213,9 +216,10 @@ section.about {
 
 section.about .text {
   position: absolute;
-  width: 42%;
+  width: 40%;
+  max-width: 600px;
   top: 40px;
-  right: 4%;
+  left: 55%;
   margin: 0;
 }
 
@@ -226,20 +230,22 @@ section.new {
   display: flex;
   align-items: top;
   max-width: 100%;
+  justify-content: center;
 }
 
 section.room .text,
 section.playlist .text,
 section.chat .text {
   width: 40%;
+  max-width: 500px;
   margin: 120px 0 30px 8%;
 }
 
 section.room .img,
 section.playlist .img,
-section.chat .img,
-section.new .img {
+section.chat .img {
   margin: 30px 0 10px;
+  max-width: 600px;
   flex: 1;
   display: block;
 }
@@ -263,6 +269,7 @@ section.share img {
 
 section.new .pc-text {
   width: 50%;
+  max-width: 500px;
   margin: 120px 0 30px 8%;
 }
 
@@ -288,12 +295,59 @@ section.new .img {
 }
 
 section.new .img img {
-  width: 100%;
+  flex: 1;
+  max-width: 600px;
 }
 
 footer img {
   margin: 60px 0;
   width: 20%;
   max-width: 256px;
+}
+}
+
+@media only screen and (min-width: 1024px) {
+header .catch-phrase {
+  font-size: 1.5rem;
+  padding: 15px 0 30px;
+}
+
+header .release {
+  font-size: 2rem;
+  padding: 16px 30px;
+}
+
+section.about .text {
+  position: absolute;
+  top: 80px;
+  right: 4%;
+  margin: 0;
+}
+
+section.share {
+  display: flex;
+  align-items: top;
+  justify-content: center;
+}
+
+section.share .two {
+  display: none;
+}
+
+section.share .text {
+  margin: 60px 0 30px;
+  max-width: 400px;
+}
+
+section.share .img {
+  display: block;
+  flex: 1;
+  max-width: 500px;
+  margin: 30px 0;
+}
+
+section.share img {
+  width: 140%;
+  margin: 0 -20%;
 }
 }
