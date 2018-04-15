@@ -47,8 +47,8 @@ header .catch-phrase p {
 header .sp-screen-shot {
   width: 100%;
   height: 100%;
-  background-image: url("../images/screen-shot.png");
-  background-size: 180% auto;
+  background-image: url("../images/header-devise-sp.png");
+  background-size: 80% auto;
   background-position: center top;
   background-repeat: no-repeat;
 }
@@ -87,8 +87,8 @@ section.about img {
 section.room img,
 section.playlist img,
 section.chat img {
-  width: 140%;
-  margin: 0 -20%;
+  width: 80%;
+  margin: 0 10%;
 }
 
 section.share img {
@@ -347,7 +347,7 @@ section.share .img {
 }
 
 section.share img {
-  width: 140%;
-  margin: 0 -20%;
+  width: 100%;
+  margin: 0;
 }
 }
