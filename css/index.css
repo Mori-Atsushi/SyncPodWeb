@@ -68,7 +68,7 @@ header .release {
 }
 
 section .text {
-  margin: 20px 5% 10px;
+  margin: 20px 5% 5px;
 }
 
 section h2 {
@@ -108,7 +108,7 @@ section.new .horizontal {
 
 section.new .horizontal .text {
   width: 45%;
-  margin: 0;
+  margin: 0 0 20px;
 }
 
 section.new .horizontal img {
@@ -147,8 +147,16 @@ header .catch-phrase {
 }
 
 section .text {
-  margin: 25px 8% 15px;
+  margin: 25px 8% 5px;
 }
+
+section.room img,
+section.playlist img,
+section.chat img {
+  width: 60%;
+  margin: 0 20%;
+}
+
 
 section.new .horizontal {
   display: flex;
@@ -259,7 +267,7 @@ section.playlist .text {
 }
 
 section.share .text {
-  margin: 60px 20% 30px;
+  margin: 60px 20% 10px;
 }
 
 section.share img {
@@ -296,7 +304,7 @@ section.new .img {
 
 section.new .img img {
   flex: 1;
-  max-width: 600px;
+  max-width: 400px;
 }
 
 footer img {
@@ -335,14 +343,14 @@ section.share .two {
 }
 
 section.share .text {
-  margin: 60px 0 30px;
+  margin: 120px 0 30px;
   max-width: 400px;
 }
 
 section.share .img {
   display: block;
   flex: 1;
-  max-width: 500px;
+  max-width: 400px;
   margin: 30px 0;
 }
 
