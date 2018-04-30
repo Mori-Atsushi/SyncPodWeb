@@ -57,14 +57,24 @@ header .pc-screen-shot {
   display: none;
 }
 
-header .release {
-  position: absolute;
+header .apps {
+  position: fixed;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.7);
+  left: 0;
+  right: 0;
+  padding: 10px 5%;
+  background-color: rgba(255, 255, 255, 0.8); 
+}
+
+
+header .app {
+  display: inline-block;
+  width: 48%;
+  padding: 1%;
+}
+
+header .app img {
   width: 100%;
-  color: #ffffff;
-  font-size: 2rem;
-  padding: 12px 0;
 }
 
 section .text {
