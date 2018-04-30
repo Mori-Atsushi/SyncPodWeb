@@ -57,14 +57,24 @@ header .pc-screen-shot {
   display: none;
 }
 
-header .release {
-  position: absolute;
+header .apps {
+  position: fixed;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.7);
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  background-color: rgba(255, 255, 255, 0.8); 
+}
+
+
+.app {
+  display: inline-block;
+  width: 48%;
+  padding: 1%;
+}
+
+.app img {
   width: 100%;
-  color: #ffffff;
-  font-size: 2rem;
-  padding: 12px 0;
 }
 
 section .text {
@@ -111,15 +121,22 @@ section.new .horizontal .text {
   margin: 0 0 20px;
 }
 
-section.new .horizontal img {
+section.new .horizontal .sp-hand {
   width: 50%;
   align-self: flex-end;
+}
+
+section.new .horizontal .sp-hand img {
+  width: 100%;
 }
 
 section.new .img {
   display: none;
 }
 
+section.new .horizontal .apps {
+  display: none;
+}
 
 footer {
   background-color: #333333;
@@ -196,12 +213,11 @@ header h1 img {
   padding: 10px 10% 10px;
 }
 
-header .release {
+header .apps {
   position: relative;
-  display: inline-block;
-  width: auto;
-  font-size: 1.5rem;
-  padding: 12px 20px;
+  background: none;
+  width: 400px;
+  margin: 0 auto;
 }
 
 header .catch-phrase {
@@ -278,7 +294,7 @@ section.share img {
 section.new .pc-text {
   width: 50%;
   max-width: 500px;
-  margin: 120px 0 30px 8%;
+  margin: 60px 0 30px 8%;
 }
 
 section.new .text {
@@ -293,13 +309,21 @@ section.new .horizontal .text {
   width: 100%;
 }
 
-section.new .horizontal img {
+section.new .horizontal .sp-hand {
   display: none;
 }
+
+section.new .horizontal .apps {
+  display: block;
+  max-width: 400px;
+  margin: 50px 0 20px;
+}
+
 
 section.new .img {
   display: block;
   margin-bottom: 0;
+  align-self: flex-end;
 }
 
 section.new .img img {
@@ -318,11 +342,6 @@ footer img {
 header .catch-phrase {
   font-size: 1.5rem;
   padding: 15px 0 30px;
-}
-
-header .release {
-  font-size: 2rem;
-  padding: 16px 30px;
 }
 
 section.about .text {
