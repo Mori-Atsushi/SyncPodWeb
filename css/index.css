@@ -67,13 +67,13 @@ header .apps {
 }
 
 
-header .app {
+.app {
   display: inline-block;
   width: 48%;
   padding: 1%;
 }
 
-header .app img {
+.app img {
   width: 100%;
 }
 
@@ -121,15 +121,22 @@ section.new .horizontal .text {
   margin: 0 0 20px;
 }
 
-section.new .horizontal img {
+section.new .horizontal .sp-hand {
   width: 50%;
   align-self: flex-end;
+}
+
+section.new .horizontal .sp-hand img {
+  width: 100%;
 }
 
 section.new .img {
   display: none;
 }
 
+section.new .horizontal .apps {
+  display: none;
+}
 
 footer {
   background-color: #333333;
@@ -287,7 +294,7 @@ section.share img {
 section.new .pc-text {
   width: 50%;
   max-width: 500px;
-  margin: 120px 0 30px 8%;
+  margin: 60px 0 30px 8%;
 }
 
 section.new .text {
@@ -302,13 +309,21 @@ section.new .horizontal .text {
   width: 100%;
 }
 
-section.new .horizontal img {
+section.new .horizontal .sp-hand {
   display: none;
 }
+
+section.new .horizontal .apps {
+  display: block;
+  max-width: 400px;
+  margin: 50px 0 20px;
+}
+
 
 section.new .img {
   display: block;
   margin-bottom: 0;
+  align-self: flex-end;
 }
 
 section.new .img img {
